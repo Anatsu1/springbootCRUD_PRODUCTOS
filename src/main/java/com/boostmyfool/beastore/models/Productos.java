@@ -1,31 +1,25 @@
 package com.boostmyfool.beastore.models;
 
-import jakarta.persistence.*;
-
+import org.springframework.data.annotation.Id;
+import org.bson.types.ObjectId;
 import java.util.Date;
 
-@Entity
-@Table(name = "productos")
 public class Productos {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
-
+    private ObjectId id;
     private String nombre;
     private String marca;
     private String categoria;
     private double precio;
-
-    @Column(columnDefinition = "TEXT")
     private String descripcion;
     private Date fechaCreado;
     private String imagenArchivo;
 
-    public int getId() {
+    public ObjectId getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(ObjectId id) {
         this.id = id;
     }
 

@@ -1,7 +1,7 @@
 package com.boostmyfool.beastore.repositories;
 
 import com.boostmyfool.beastore.models.Productos;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public interface ProductosRepository extends JpaRepository<Productos,Integer> {
+import org.bson.types.ObjectId;
+import org.springframework.data.mongodb.repository.MongoRepository;
+public interface ProductosRepository extends MongoRepository<Productos, ObjectId> {
 }

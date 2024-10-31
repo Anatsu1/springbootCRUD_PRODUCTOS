@@ -1,6 +1,5 @@
 package com.boostmyfool.beastore.models;
 
-import jakarta.persistence.Column;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.*;
 import org.springframework.web.multipart.MultipartFile;
